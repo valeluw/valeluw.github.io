@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienvenidos a las tablas HTML</title>
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+            background-image: url(./fondo.gif);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        header {
+            text-align: center;
+            border-radius: 5px;
+            background-color: lightgrey;
+        }
+
+        header h1 {
+            margin-top: 0;
+        }
+
+        main {
+            width: 50%;
+            margin: auto;
+        }
+
+        table {
+            width: 100%;
+            background-color: #eeeeee;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid lightgrey;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            padding: 10px;
+        }
+
+        td:hover {
+            background: lightblue;
+        }
+
+        tr:nth-child(odd) {
+            background-color: #DDDDDD;
+        }
+        #ultima{
+            text-align: center;
+            animation: titila 2s linear infinite;
+        }
+        @keyframes titila{
+            50% {
+                opacity:0
+            }
+        }
+
+        #oferta {
+            background-color: #ffff30;
+            text-align: center;
+
+        }
+
+        td button {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>HTML 5 - Clase 5</h1>
+        <h2>Tablas HTML</h2>
+    </header>
+    <main>
+        <table>
+            <caption>Lista de Alumnos</caption>
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Apellido</th>
+                    <th>Profesion</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Jaime</td>
+                    <td>Salas</td>
+                    <td>Ingeniero Metalurgico</td>
+                </tr>
+                <tr>
+                    <td>Rosana</td>
+                    <td>Pirela</td>
+                    <td>Cocinera</td>
+                </tr>
+                <tr>
+                    <td>Lucila</td>
+                    <td>Piskulic</td>
+                    <td>Diseñadora Grafica</td>
+                </tr>
+                <tr>
+                    <td>Ana</td>
+                    <td>Delgado</td>
+                    <td>Bailarina</td>
+                </tr>
+            </tbody>
+        </table>
+        <h3>Otro ejemplo de tabla</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Descripcion</th>
+                    <th></th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Pasta</td>
+                    <td>Las mejores pastas del condado!</td>
+                    <td id="oferta" rowspan="3">
+                        Oferta Especial
+                        <div>
+                            &#128151;&#128151;&#128151;
+                        </div>
+                    </td>
+                    <td><button>Comprar</button></td>
+                </tr>
+                <tr>
+                    <td>Rissoto</td>
+                    <td>El mejor Rissotto preparado con arroz arboreo</td>
+                    <td><button>Comprar</button></td>
+                </tr>
+                <tr>
+                    <td>Milanesa</td>
+                    <td>Mucho mejor que el club de la milanesa</td>
+                    <td><button>Comprar</button></td>
+                </tr>
+                <tr>
+                    <td>
+
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+    </main>
+</body>
+
+</html>
